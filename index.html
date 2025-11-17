@@ -1,0 +1,161 @@
+<!--
+Simple, modern single-file CV / resume template
+Instructions:
+- Open this file in a browser to view.
+- Edit the placeholder text directly in the HTML or use the contenteditable attributes in the browser to edit quickly.
+- Click "Print / Save as PDF" button to create a PDF.
+- To import into Canva: export as PDF (via print) then upload to Canva as a template background.
+
+Created for the user: editable, responsive, and easy to style.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resume  Wai Yan Kaung Htet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#1f6feb;--muted:#6b7280;--paper:#ffffff;--bg:#f3f4f6}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{background:var(--bg);padding:28px}
+    .card{max-width:900px;margin:0 auto;background:var(--paper);border-radius:12px;box-shadow:0 8px 30px rgba(17,24,39,0.08);overflow:hidden;display:grid;grid-template-columns:260px 1fr}
+    .sidebar{background:linear-gradient(180deg, rgba(31,111,235,0.08), rgba(31,111,235,0.03));padding:28px}
+    .photo{width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:32px;margin-bottom:18px}
+    h1{margin:0;font-size:22px}
+    h2{margin:0;font-size:14px;color:var(--muted);font-weight:600}
+    .muted{color:var(--muted);font-size:13px;margin-top:6px}
+    .contact{margin-top:18px;font-size:13px}
+    .contact div{margin-bottom:8px}
+    .section{padding:28px}
+    .section-title{display:flex;align-items:baseline;gap:8px;margin-bottom:12px}
+    .section-title h3{margin:0;font-size:16px}
+    .summary{font-size:14px;color:#111827;line-height:1.45}
+    .list-item{margin-bottom:14px}
+    .job-title{font-weight:600}
+    .employer{color:var(--muted);font-size:13px}
+    .dates{float:right;color:var(--muted);font-size:13px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eef2ff;padding:6px 10px;border-radius:999px;font-size:13px}
+    .download{position:absolute;right:28px;top:28px}
+    button{background:var(--accent);color:white;border:0;padding:10px 14px;border-radius:8px;font-weight:600;cursor:pointer}
+    /* Responsive */
+    @media (max-width:720px){.card{grid-template-columns:1fr;padding-bottom:20px}.sidebar{order:2}.section{padding:18px}.photo{margin:0 auto}}
+  </style>
+</head>
+<body>
+  <div style="position:relative;max-width:900px;margin:0 auto">
+    <div class="download"><button onclick="window.print()">Print / Save as PDF</button></div>
+  </div>
+
+  <main class="card" role="main">
+    <aside class="sidebar">
+      <div class="photo" contenteditable="true" aria-label="Your initials">WY</div>
+      <h1 contenteditable="true">Wai Yan Kaung Htet</h1>
+      <h2 contenteditable="true"></h2>
+      <div class="muted" contenteditable="true">Born: 24.3.2004  </div>
+
+      <div class="contact">
+        <div><strong>Email:</strong> <span contenteditable="true">waiy86932@gmail.com</span></div>
+        <div><strong>Phone:</strong> <span contenteditable="true">+95 9740928100</span></div>
+        <div><strong></strong> <span contenteditable="true"></span></div>
+        <div><strong></strong> <span contenteditable="true"></span></div>
+      </div>
+
+      <hr style="margin:16px 0;border:none;border-top:1px solid rgba(15,23,42,0.06)">
+
+      <div>
+        <div class="section-title"><h3>Skills</h3></div>
+        <div class="skills">
+          <div class="skill" contenteditable="true">HTML</div>
+          <div class="skill" contenteditable="true">CSS</div>
+          <div class="skill" contenteditable="true"></div>
+          <div class="skill" contenteditable="true"></div>
+          <div class="skill" contenteditable="true">Git</div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+        <div class="section-title"><h3>Languages</h3></div>
+        <div class="muted" contenteditable="true">Burmese (Native)  English (Intermediate)</div>
+      </div>
+
+      <div style="margin-top:18px">
+        <div class="section-title"><h3>Education</h3></div>
+        <div class="muted">
+          <div><strong contenteditable="true">Chemistry  First year</strong></div>
+          <div contenteditable="true">First year</div>
+        </div>
+      </div>
+
+    </aside>
+
+    <section class="section">
+      <div style="display:flex;align-items:center;gap:12px;justify-content:space-between">
+        <div>
+          <h1 style="margin-bottom:4px;font-size:28px" contenteditable="true">Wai Yan Kaung Htet</h1>
+          <div class="muted" contenteditable="true">Short job title or tagline (e.g., Aspiring Software Engineer)</div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px">
+        <div class="section-title"><h3>Professional Summary</h3></div>
+        <p class="summary" contenteditable="true">A concise 24 sentence summary highlighting your strengths, what you bring to the role, and the kind of position you're seeking. Example: "Motivated chemistry student with strong analytical skills and practical experience in lab techniques. Seeking an internship in quality control where I can apply lab skills and learn industry best practices."</p>
+      </div>
+
+      <div style="margin-top:20px">
+        <div class="section-title"><h3>Work Experience</h3></div>
+
+        <div class="list-item">
+          <div>
+            <span class="job-title" contenteditable="true">Retail Assistant</span>
+            <span class="dates">Jun 2024  Present</span>
+          </div>
+          <div class="employer" contenteditable="true">Store Name  City</div>
+          <div class="muted" contenteditable="true">- Greeted customers, handled cash, and assisted with stock inventory.&#10;- Improved sales by 10% through upselling and strong customer service.</div>
+        </div>
+
+        <div class="list-item">
+          <div>
+            <span class="job-title" contenteditable="true">Part-time Lab Assistant</span>
+            <span class="dates">Jan 2023  May 2024</span>
+          </div>
+          <div class="employer" contenteditable="true">University Lab  City</div>
+          <div class="muted" contenteditable="true">- Supported experiments, maintained equipment, and recorded precise observations.</div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:20px">
+        <div class="section-title"><h3>Projects</h3></div>
+        <div class="list-item">
+          <div class="job-title" contenteditable="true">Project Title</div>
+          <div class="muted" contenteditable="true">Short description of the project and your role. Include measurable outcomes if possible.</div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px">
+        <div class="section-title"><h3>Certifications</h3></div>
+        <div class="muted" contenteditable="true">Web Foundation  Completed October 2025<br>HTML Fundamentals  2025<br> (2024)</div>
+      </div>
+
+      <div style="margin-top:22px;display:flex;gap:12px;align-items:center;justify-content:flex-end">
+        <button onclick="downloadPlainText()">Download TXT</button>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    function downloadPlainText(){
+      const text = document.documentElement.outerHTML;
+      const blob = new Blob([text],{type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'resume.html'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
